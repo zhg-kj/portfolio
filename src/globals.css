@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+
+    cursor: url(./assets/images/mouse.png) 3 3, auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+/***CLASSES***/
+.centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.slide {
+    position: absolute;
+    bottom: -100%;
+
+    -webkit-animation: slide 1s forwards;
+    animation: slide 1s forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes slide {
+    100% {bottom: 0;}
+}
+
+@keyframes slide {
+    100% {bottom: 0;}
+}
